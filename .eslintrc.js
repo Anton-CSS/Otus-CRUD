@@ -20,6 +20,7 @@ module.exports = {
     "import/no-unresolved": "off",
     "import/extensions": ["warn", "never"],
     "no-return-assign": "off",
+    "@typescript-eslint/no-var-requires": 0,
   },
   plugins: ["jest", "@typescript-eslint"],
 };

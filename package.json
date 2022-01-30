@@ -2,7 +2,6 @@
   "name": "otus-crud",
   "version": "1.0.0",
   "description": "",
-  "type": "module",
   "scripts": {
     "test": "jest",
     "lint": "prettier --check . && eslint . --ext .js,.ts && tsc --noEmit",
@@ -40,6 +39,7 @@
     "@typescript-eslint/parser": "^5.8.0",
     "babel-jest": "^26.6.3",
     "babel-loader": "^8.2.2",
+    "cors": "^2.8.5",
     "cross-env": "^7.0.3",
     "css-loader": "^5.2.4",
     "css-minimizer-webpack-plugin": "^3.0.0",
@@ -54,7 +54,8 @@
     "husky": "^6.0.0",
     "jest": "^26.6.3",
     "lint-staged": "^10.5.4",
-    "mini-css-extract-plugin": "^1.6.0",
+    "mini-css-extract-plugin": "^1.6.2",
+    "nodemon": "^2.0.13",
     "postcss": "^8.4.5",
     "postcss-loader": "^6.2.1",
     "postcss-preset-env": "^7.1.0",
@@ -66,16 +67,15 @@
     "typescript": "^4.5.4",
     "webpack": "^5.31.2",
     "webpack-cli": "^4.6.0",
-    "webpack-dev-server": "^3.11.2",
-    "cors": "^2.8.5",
-    "express": "^4.17.1",
-    "nodemon": "^2.0.13"
+    "webpack-dev-server": "^3.11.2"
   },
   "lint-staged": {
     "*.js": "eslint --cache --fix",
     "*.{js,css,md,yml,html}": "prettier --write"
   },
   "dependencies": {
-    "normalize.css": "^8.0.1"
+    "express": "^4.17.1",
+    "normalize.css": "^8.0.1",
+    "cors": "^2.8.5"
   }
 }
